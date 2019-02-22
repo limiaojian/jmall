@@ -19,6 +19,11 @@ public class BaseResult<T> {
         this.code=code;
     }
 
+    public BaseResult(int code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
+
     public BaseResult(T data, int code, String msg) {
         this.data = data;
         this.code = code;

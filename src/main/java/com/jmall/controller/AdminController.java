@@ -1,8 +1,8 @@
 package com.jmall.controller;
 
+import com.jmall.interceptor.JmallException;
 import com.jmall.model.User;
 import com.jmall.service.UserService;
-import com.jmall.util.BaseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,10 +19,10 @@ public class AdminController {
         return "hello," + name;
     }
 
-    @RequestMapping("/user")
-    public BaseResult findUser(int id){
-        User user = userService.findById(id);
-        return new BaseResult(user);
+    @RequestMapping(value = "/user")
+    public User findUser(int id){
+        throw new JmallException("出错了啊");
+        //return userService.findById(id);
     }
 
     public void addUser(User user){
