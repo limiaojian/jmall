@@ -3,4 +3,4 @@
 2、统一封装返回结果、异常处理                  --完成
 3、解决返回中文乱码                           --完成
 4、将Whitelabel Error Page页面替换为json返回  --完成
-5、集成mybatis plus,统一分页处理
+5、集成mybatis plus,统一分页处理              --完成

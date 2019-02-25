@@ -1,14 +1,8 @@
 package com.jmall.mapper;
 
+import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.jmall.model.User;
 
-import java.util.List;
+public interface UserMapper extends BaseMapper<User> {
 
-public interface UserMapper {
-
-    User findById(int id);
-
-    List<User> findAll();
-
-    void addUser(User user);
 }
